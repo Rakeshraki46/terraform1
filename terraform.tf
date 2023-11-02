@@ -6,7 +6,7 @@ provider "aws"{
 }
 
 
-resource "aws_instance" "terraform"{
+resource "aws_instance" "terraform" {
  ami = "ami-0cbd40f694b804622"
  instance_type = "t2.micro"
  count = 2

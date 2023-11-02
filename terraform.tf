@@ -1,17 +1,14 @@
-provider "aws"{
-
- region = "us-west-1"
- access_key = "AKIAXNJHMXFKGLDKVEWM"
- secret_key = "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"
+provider "aws" {
+ region = "us-east-2"
+ access_key = "AKIAXNJHMXFKIPCGELPQ"
+ secret_key = "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"
 }
-
-
-resource "aws_instance" "terraform" {
- ami = "ami-0cbd40f694b804622"
+resource "aws_instance" "mudhiraj" {
+ ami = "ami-0e83be366243f524a"
  instance_type = "t2.micro"
  count = 2
 tags = {
-       Name = "terraform"
+       Name = "Raki"
 }
 }
 
